@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   else {
     try {
       const { body } = req;
-      const url = 'https://myown-gpt.vercel.app/api/chat';
+      const url = 'https://api.openai.com/v1/chat/completions';
       const headers = {
         'Content-type': 'application/json',
         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
