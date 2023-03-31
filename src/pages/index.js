@@ -27,7 +27,7 @@ export default function Home() {
     const url = '/api/chat';
 
     const data = {
-      model: "gpt4",
+      model: "gpt-4",
       messages: [{ "role": "user", "content": message }]
     };
 
